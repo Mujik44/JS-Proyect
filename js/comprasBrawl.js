@@ -9,6 +9,22 @@ let totalPagar
 function Pago(totalPago,cantidad){
     totalPagar = totalPago*cantidad
 }
+class totalGemas {
+    constructor(id, cantidad, precio){
+        this.id = parseFloat(id);
+        this.cantidad = parseFloat(cantidad);
+        this.precio = parseFloat(precio)
+    }
+}
+
+const Gemas = [];
+
+Gemas.push(new totalGemas("1","2000","379.90"));
+Gemas.push(new totalGemas("2","950","189.90"));
+Gemas.push(new totalGemas("3","360","74.90"));
+Gemas.push(new totalGemas("4","170","37.90"));
+Gemas.push(new totalGemas("5","80","17.90"));
+Gemas.push(new totalGemas("6","30","6.90"));
 
 console.log("Bienvenido a SuperCell Store de Brawl Stars") 
 
@@ -16,13 +32,18 @@ while(regresar == "SI"){
     totalPagar = 0
     let cantidad = 0
 
-    console.log("Opciones:") 
-    console.log("1) 2000 Gemas = 1̶0̶2̶.̶8̶6$ 92.57$") 
-    console.log("2) 950 Gemas = 5̶1̶.̶4̶1$ 46.27$") 
-    console.log("3) 360 Gemas = 2̶0̶.̶2̶8$ 18.25$") 
-    console.log("4) 170 Gemas = 1̶0̶.̶2̶6$ 9.24$") 
-    console.log("5) 80 Gemas = 4̶.̶8̶5$ 4.36$") 
-    console.log("6) 30 Gemas = 1̶.̶8̶7$ 1.68$") 
+    console.log("Opciones: con 10% mas!!!") 
+    const resultado = Gemas.map((el) => {
+        return{
+            id: el.id,
+            cantidad: el.cantidad,
+            extra: el.cantidad*0.1,
+            total: el.cantidad + el.cantidad*0.1,
+            precio: el.precio
+        }
+    })
+    console.log(resultado)
+    
     opcion = prompt("Elije una opcion:")
 
     switch(opcion){

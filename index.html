@@ -4,9 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/sass.css">
     <title>Brawl Stars</title>
 </head>
 <body>
+    <main>
+        <div class="portada">
+            <img src="./image/portada_ventas.webp" alt="portada de venta de gemas">
+        </div>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">Compra Gemas!!</a>
+                <form class="d-flex" role="search">
+                    <input id="txtBuscar" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button id="btnBuscar" onclick="filtroGemas()" class="btn btn-outline-success" >Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </main>
+    <section id="sectionGemas">
+        <div class="contTotal">
+            <div class="contTotalgemas dosMil">
+                <div class="portadaGemas"> 
+                    <img src="./image/2200gemas.webp" alt="2200 gemas">
+                </div>
+                <div class="textoGemas">
+                    <div class="textoInfo">
+                        <h3>2200 Gemas </h3>
+                        <div class="iconoGema">
+                            <img src="./image/iconogemas.png" alt="ícono de gemas">
+                            <p>2000 + 200</p>
+                        </div>
+                    </div>
+                    <button>379.90</button>
+                </div>
+            </div>
+            <div class="contTotalgemas mil">
+                <div class="portadaGemas"> 
+                    <img src="./image/1045gemas.webp" alt="1045 gemas">
+                </div>
+                <div class="textoGemas">
+                    <div class="textoInfo">
+                        <h3>1045 Gemas </h3>
+                        <div class="iconoGema">
+                            <img src="./image/iconogemas.png" alt="ícono de gemas">
+                            <p>950 + 95</p>
+                        </div>
+                    </div>
+                    <button>189.90</button>
+                </div>
+            </div>
+            <div class="contTotalgemas trescientos">
+                <div class="portadaGemas"> 
+                    <img src="./image/396gemas.webp" alt="396 gemas">
+                </div>
+                <div class="textoGemas">
+                    <div class="textoInfo">
+                        <h3>396 Gemas </h3>
+                        <div class="iconoGema">
+                            <img src="./image/iconogemas.png" alt="ícono de gemas">
+                            <p>360 + 36</p>
+                        </div>
+                    </div>
+                    <button>74.90</button>
+                </div>
+            </div>
+            <div class="contTotalgemas cien">
+                <div class="portadaGemas"> 
+                    <img src="./image/187gemas.webp" alt="187 gemas">
+                </div>
+                <div class="textoGemas">
+                    <div class="textoInfo">
+                        <h3>187 Gemas </h3>
+                        <div class="iconoGema">
+                            <img src="./image/iconogemas.png" alt="ícono de gemas">
+                            <p>170 + 17</p>
+                        </div>
+                    </div>
+                    <button>37.90</button>
+                </div>
+            </div>
+            <div class="contTotalgemas ochenta">
+                <div class="portadaGemas"> 
+                    <img src="./image/88gemas.webp" alt="88 gemas">
+                </div>
+                <div class="textoGemas">
+                    <div class="textoInfo">
+                        <h3>88 Gemas </h3>
+                        <div class="iconoGema">
+                            <img src="./image/iconogemas.png" alt="ícono de gemas">
+                            <p>80 + 8</p>
+                        </div>
+                    </div>
+                    <button>17.90</button>
+                </div>
+            </div>
+            <div class="contTotalgemas treinta">
+                <div class="portadaGemas"> 
+                    <img src="./image/33gemas.webp" alt="33 gemas">
+                </div>
+                <div class="textoGemas">
+                    <div class="textoInfo">
+                        <h3>33 Gemas </h3>
+                        <div class="iconoGema">
+                            <img src="./image/iconogemas.png" alt="ícono de gemas">
+                            <p>30 + 3</p>
+                        </div>
+                    </div>
+                    <button>6.90</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/comprasBrawl.js"></script>
 </body>
 </html>
