@@ -23,69 +23,31 @@
             <nav>
                 <ul>
                     <li><a class="botonMenu botonVolver" href="../index.html"><i class="fa-solid fa-circle-chevron-left"></i>Seguir Comprando</a></li>
-                    <li><a class="botonMenu botonCarrito active" href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #f2c63c;"></i>Carrito<span class="numero">0</span></a></li>
+                    <li><a class="botonMenu botonCarrito active" href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #f2c63c;"></i>Carrito</a></li>
                 </ul>
             </nav>
         </main>
         <section class="contProductos contCarrito">
             <h2 class="tituloPrincipal">CARRITO</h2>
-            <p class="carritoVacio">Tu carrito está vacio <i class="fa-solid fa-face-sad-tear"></i></p>
-            <div class="carritoProductos disabled">
-                <div class="carritoProducto">
-                    <img class="carritoProductoImagen" src="../image/gemas/2200gemas.webp" alt="200 gemas">
-                    <div class="carritoProductoTitulo">
-                        <small>Título</small>
-                        <h3>2200 Gemas</h3>
-                    </div>
-                    <div class="carritoProductoCantidad">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="carritoProductoPrecio">
-                        <small>Precio</small>
-                        <p>$92.57</p>
-                    </div>
-                    <div class="carritoProductoSubtotal">
-                        <small>Subtotal</small>
-                        <p>$92.57</p>
-                    </div>
-                    <button class="carritoProductoEliminar"><i class="fa-solid fa-trash"></i></button>
-                </div>
-                <div class="carritoProducto">
-                    <img class="carritoProductoImagen" src="../image/gemas/1045gemas.webp" alt="950 gemas">
-                    <div class="carritoProductoTitulo">
-                        <small>Título</small>
-                        <h3>1045 Gemas</h3>
-                    </div>
-                    <div class="carritoProductoCantidad">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="carritoProductoPrecio">
-                        <small>Precio</small>
-                        <p>$46.27</p>
-                    </div>
-                    <div class="carritoProductoSubtotal">
-                        <small>Subtotal</small>
-                        <p>$46.27</p>
-                    </div>
-                    <button class="carritoProductoEliminar"><i class="fa-solid fa-trash"></i></button>
-                </div>
+            <p id="carritoVacio" class="carritoVacio">Tu carrito está vacio <i class="fa-solid fa-face-sad-tear"></i></p>
+            <div id="carritoProductos" class="carritoProductos disabled">
+                <!-- se rellena con el js -->
             </div>
-            <div class="carritoAcciones disabled">
+            <div id="carritoAcciones" class="carritoAcciones disabled">
                 <div class="vaciarCarrito">
-                    <button class="vaciar">Vaciar Carrito</button>
+                    <button id="vaciar" class="vaciar">Vaciar Carrito</button>
                 </div>
                 <div class="comprarAhora">
                     <div class="totalCarrito">
                         <p>Total: </p>
                         <p id="total">$138.84</p>
                     </div>
-                    <button class="comprar">Comprar Ahora</button>
+                    <button id="comprar" class="comprar">Comprar Ahora</button>
                 </div>
             </div>
-            <p class="carritoComprado disabled">Gracias por tu compra <i class="fa-solid fa-face-smile"></i></p>
+            <p id="carritoComprado" class="carritoComprado">Gracias por tu compra <i class="fa-solid fa-face-smile"></i></p>
         </section>
     </section>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>
