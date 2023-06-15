@@ -43,7 +43,7 @@ while(regresar == "SI"){
         }
     })
     console.log(resultado)
-    
+
     opcion = prompt("Elije una opcion:")
 
     switch(opcion){

@@ -4,122 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS -->
+    <!-- HOVER.CSS -->
+    <link rel="stylesheet" href="./css/hover.css">
+    <!-- CSS - SASS -->
     <link rel="stylesheet" href="./css/sass.css">
     <title>Brawl Stars</title>
 </head>
 <body>
-    <main>
-        <div class="portada">
-            <img src="./image/portada_ventas.webp" alt="portada de venta de gemas">
+    <!-- CARRITO
+    <section class="barraCarrito">
+        BOTON DEL CARRITO 
+        <div class="botonCarrito hvr-rectangle-out"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></div>
+    </section>
+    <MENU DESPLEGABLE CARRITO 
+    <div class="carritoDesplegable">
+        <div class="tituloCarrito">
+            <i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>
+            <h3>Resumen del Pedido</h3>
         </div>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">Compra Gemas!!</a>
-                <form class="d-flex" role="search">
-                    <input id="txtBuscar" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button id="btnBuscar" onclick="filtroGemas()" class="btn btn-outline-success" >Buscar</button>
-                </form>
-            </div>
-        </nav>
-    </main>
-    <section id="sectionGemas">
-        <div class="contTotal">
-            <div class="contTotalgemas dosMil">
-                <div class="portadaGemas"> 
-                    <img src="./image/2200gemas.webp" alt="2200 gemas">
-                </div>
-                <div class="textoGemas">
-                    <div class="textoInfo">
-                        <h3>2200 Gemas </h3>
-                        <div class="iconoGema">
-                            <img src="./image/iconogemas.png" alt="ícono de gemas">
-                            <p>2000 + 200</p>
-                        </div>
-                    </div>
-                    <button>379.90</button>
-                </div>
-            </div>
-            <div class="contTotalgemas mil">
-                <div class="portadaGemas"> 
-                    <img src="./image/1045gemas.webp" alt="1045 gemas">
-                </div>
-                <div class="textoGemas">
-                    <div class="textoInfo">
-                        <h3>1045 Gemas </h3>
-                        <div class="iconoGema">
-                            <img src="./image/iconogemas.png" alt="ícono de gemas">
-                            <p>950 + 95</p>
-                        </div>
-                    </div>
-                    <button>189.90</button>
-                </div>
-            </div>
-            <div class="contTotalgemas trescientos">
-                <div class="portadaGemas"> 
-                    <img src="./image/396gemas.webp" alt="396 gemas">
-                </div>
-                <div class="textoGemas">
-                    <div class="textoInfo">
-                        <h3>396 Gemas </h3>
-                        <div class="iconoGema">
-                            <img src="./image/iconogemas.png" alt="ícono de gemas">
-                            <p>360 + 36</p>
-                        </div>
-                    </div>
-                    <button>74.90</button>
-                </div>
-            </div>
-            <div class="contTotalgemas cien">
-                <div class="portadaGemas"> 
-                    <img src="./image/187gemas.webp" alt="187 gemas">
-                </div>
-                <div class="textoGemas">
-                    <div class="textoInfo">
-                        <h3>187 Gemas </h3>
-                        <div class="iconoGema">
-                            <img src="./image/iconogemas.png" alt="ícono de gemas">
-                            <p>170 + 17</p>
-                        </div>
-                    </div>
-                    <button>37.90</button>
-                </div>
-            </div>
-            <div class="contTotalgemas ochenta">
-                <div class="portadaGemas"> 
-                    <img src="./image/88gemas.webp" alt="88 gemas">
-                </div>
-                <div class="textoGemas">
-                    <div class="textoInfo">
-                        <h3>88 Gemas </h3>
-                        <div class="iconoGema">
-                            <img src="./image/iconogemas.png" alt="ícono de gemas">
-                            <p>80 + 8</p>
-                        </div>
-                    </div>
-                    <button>17.90</button>
-                </div>
-            </div>
-            <div class="contTotalgemas treinta">
-                <div class="portadaGemas"> 
-                    <img src="./image/33gemas.webp" alt="33 gemas">
-                </div>
-                <div class="textoGemas">
-                    <div class="textoInfo">
-                        <h3>33 Gemas </h3>
-                        <div class="iconoGema">
-                            <img src="./image/iconogemas.png" alt="ícono de gemas">
-                            <p>30 + 3</p>
-                        </div>
-                    </div>
-                    <button>6.90</button>
-                </div>
-            </div>
+        <div class="contItems">
+            <ul>
+                <li>Seleccione un item para agregarlo al carrito</li>
+            </ul>
         </div>
+        <div class="total">
+            <h3>Total: </h3>
+            <h3 class="totalPagar"> -- </h3>
+        </div>
+    </div> -->
+    <div class="portada">
+        <img src="./image/portada_ventas.webp" alt="portada de venta de gemas">
+    </div>
+    <section class="contenedorTotal">
+        <main>
+            <header>
+                <h1 class="logo">Brawl Stars Store</h1>
+                <img src="./image/logo-brawl.png" alt="logo de brawl stars">
+            </header>
+            <nav>
+                <ul>
+                    <li><button id="todos" class="botonMenu botonCategoria active"><i class="fa-solid fa-house" style="color: #f2c63c;"></i>Todos los productos</button></li>
+                    <li><button id="gemas" class="botonMenu botonCategoria"><img src="./image/gemas/iconogemas.png" alt="icono de gema">Gemas</button></li>
+                    <li><butto id="monedas" class="botonMenu botonCategoria"><img src="./image/monedas/iconomoneda.png" alt="icono de moneda">Monedas</button></li>
+                    <li><a class="botonMenu botonCarrito" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>Carrito<span class="numero">0</span></a></li>
+                </ul>
+            </nav>
+        </main>
+        <section class="contProductos">
+            <h2 id="tituloPrincipal" class="tituloPrincipal">TODOS LOS PRODUCTOS</h2>
+            <div id="contenedorProductos" class="contenedorProductos">
+                <!-- se rellena con js -->
+            </div>
+        </section>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/comprasBrawl.js"></script>
+    <script src="./js/productos.js"></script>
 </body>
 </html>

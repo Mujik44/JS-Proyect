@@ -1,3 +1,32 @@
+:root{
+    --fondo: rgba(246,246,246,255);
+    --rojo: #f01919;
+    --amarillo: #f2c63c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--amarillo);
+}
+
 .portada{
     width: 100%;
     height: 30rem;
@@ -8,65 +37,130 @@
     }
 }
 
-.contTotal{
-    width: 100%;
+.contenedorTotal{
     display: grid;
-    justify-items: center;
-    .contTotalgemas{
-        width: 90%;
-        height: 400px;
-        margin: 4rem;
-        background-color: red;
-        .portadaGemas{
-            width: 100%;
-            height: 70%;
-            background-color: aqua;
-            img{
-                width: 100%;
-                height: 100%;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--amarillo);
+    main{
+        padding: 2rem;
+        padding-right: 0;
+        color: white;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        header{
+            .logo{
+                font-weight: 400;
+                font-size: 1.5rem;
             }
         }
-        .textoGemas{
-            display: grid;
-            .textoInfo{
-                grid-column: 1/2;
+        nav{
+            ul{
                 display: flex;
                 flex-direction: column;
-                .iconoGema{
+                gap: 1rem;
+                .botonMenu{
+                    background-color: transparent;
+                    border: 0;
+                    color: white;
+                    font-size: 1rem;
                     display: flex;
+                    gap: 1rem;
+                    padding: 1rem;
+                    font-weight: 600;
+                    align-items: center;
                     img{
-                        width: 20px;
-                        height: 20px;
+                        width: 1rem;
+                    }
+                }
+                .botonMenu.active{
+                    background-color: var(--fondo);
+                    color: var(--amarillo);
+                    width: 100%;
+                    padding: 1rem;
+                    border-top-left-radius: 1rem;
+                    border-bottom-left-radius: 1rem;
+                }
+                .botonCarrito{
+                    margin-top: 2rem;
+                    .numero{
+                        background-color: white;
+                        color: var(--amarillo);
+                        padding: 0 0.25rem;
+                        border-radius: 0.25rem;
+                    }
+                }
+                .botonCarrito.active{
+                    .numero{
+                        background-color: var(--amarillo);
+                        color: white;
                     }
                 }
             }
-            button{
-                grid-column: 2/3;
-            }
         }
     }
-    .dosMil{
-        grid-column: 1/3;
-        grid-row: 1/3;
+}
+
+.contProductos{
+    background-color: var(--fondo);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 1rem;
+    padding: 3rem;
+    .tituloPrincipal{
+        color: var(--rojo);
+        margin-bottom: 2rem;
     }
-    .mil{
-        grid-column: 3/5;
-        grid-row: 1/3; 
-    }
-    .trecientos{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .cien{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .ochenta{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .treinta{
-        grid-column: 4/5;
-        grid-row: 3/4;
+    .contenedorProductos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        .producto{
+            .productoImagen{
+                max-width: 100%;
+                background-image: url(../image/supercell.png);
+                background-size: 100%;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+            .productoDetalles{
+                background-color: var(--amarillo);
+                padding: 0.3rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+                .productoTitulo1{
+                    font-size: 1.5rem;
+                }
+                .productoTitulo2{
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    img{
+                        width: 1rem;
+                    }
+                }
+                .productoAgregar{
+                    color: var(--amarillo);
+                    padding: 0.3rem;
+                    text-transform: uppercase;
+                    border-radius: 2rem;
+                    border: 2px solid white;
+                    background-color: white;
+                    font-weight: bold;
+                    transition: background-color 0.2s, color 0.2s;
+                }
+                .productoAgregar:hover{
+                    background-color: var(--rojo);
+                    color: white;
+                }
+            }
+        }
     }
 }
