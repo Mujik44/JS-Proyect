@@ -16,6 +16,7 @@ async function pedirProductos(){
     
             const div = document.createElement("div")
             div.classList.add("producto");
+            div.classList.add("hvr-bob");
             div.innerHTML = `
                 <img class="productoImagen" src="${producto.imagen}" alt="${producto.nombre}">
                 <div class="productoDetalles">
