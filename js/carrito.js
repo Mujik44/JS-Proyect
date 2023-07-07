@@ -25,7 +25,7 @@ function cargarProductosCarrito(){
             const div = document.createElement("div");
             div.classList.add("carritoProducto");
             div.innerHTML = `
-                <img class="carritoProductoImagen" src=".${producto.imagen}" alt="${producto.nombre}">
+                <img class="carritoProductoImagen" src="${producto.imagen}" alt="${producto.nombre}">
                 <div class="carritoProductoTitulo">
                     <small>Título</small>
                     <h3>${producto.nombre}</h3>
@@ -103,8 +103,8 @@ function comprarCarrito(){
     localStorage.setItem("productosEnElCarrito", JSON.stringify(productosEnCarrito));
     
     contCarritoVacio.classList.add("disabled");
-        contCarritoProductos.classList.add("disabled");
-        contCarritoAcciones.classList.add("disabled");
-        contCarritoComprado.classList.remove("disabled");
+    contCarritoProductos.classList.add("disabled");
+    contCarritoAcciones.classList.add("disabled");
+    contCarritoComprado.classList.remove("disabled");
 
 }

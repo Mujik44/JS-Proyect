@@ -1,0 +1,147 @@
+[
+    {
+        "id": "2000-gemas",
+        "nombre": "2000 Gemas", 
+        "imagen": "../image/gemas/2200gemas.webp",
+        "icono": "../image/gemas/iconogemas.png",
+        "categoria": {
+            "nombre": "GEMAS",
+            "id": "gemas"
+        },
+        "precio": 92.57
+    },
+    {
+        "id": "950-gemas",
+        "nombre": "950 Gemas", 
+        "imagen": "../image/gemas/1045gemas.webp",
+        "icono": "../image/gemas/iconogemas.png",
+        "categoria": {
+            "nombre": "GEMAS",
+            "id": "gemas"
+        },
+        "precio": 46.27
+    },
+    {
+        "id": "360-gemas",
+        "nombre": "360 Gemas", 
+        "imagen": "../image/gemas/396gemas.webp",
+        "icono": "../image/gemas/iconogemas.png",
+        "categoria": {
+            "nombre": "GEMAS",
+            "id": "gemas"
+        },
+        "precio": 18.25
+    },
+    {
+        "id": "170-gemas",
+        "nombre": "170 Gemas", 
+        "imagen": "../image/gemas/187gemas.webp",
+        "icono": "../image/gemas/iconogemas.png",
+        "categoria": {
+            "nombre": "GEMAS",
+            "id": "gemas"
+        },
+        "precio": 9.24
+    },
+    {
+        "id": "80-gemas",
+        "nombre": "80 Gemas", 
+        "imagen": "../image/gemas/88gemas.webp",
+        "icono": "../image/gemas/iconogemas.png",
+        "categoria": {
+            "nombre": "GEMAS",
+            "id": "gemas"
+        },
+        "precio": 4.36
+    },
+    {
+        "id": "30-gemas",
+        "nombre": "30 Gemas", 
+        "imagen": "../image/gemas/33gemas.webp",
+        "icono": "../image/gemas/iconogemas.png",
+        "categoria": {
+            "nombre": "GEMAS",
+            "id": "gemas"
+        },
+        "precio": 1.68
+    },
+    {
+        "id": "2600-monedas",
+        "nombre": "2600 Monedas", 
+        "imagen": "../image/monedas/2600monedas.png",
+        "icono": "../image/monedas/iconomoneda.png",
+        "categoria": {
+            "nombre": "MONEDAS",
+            "id": "monedas"
+        },
+        "precio": 15.68
+    },
+    {
+        "id": "1200-monedas",
+        "nombre": "1200 Monedas", 
+        "imagen": "../image/monedas/1200monedas.png",
+        "icono": "../image/monedas/iconomoneda.png",
+        "categoria": {
+            "nombre": "MONEDAS",
+            "id": "monedas"
+        },
+        "precio": 7.84
+    },
+    {
+        "id": "400-monedas",
+        "nombre": "400 Monedas", 
+        "imagen": "../image/monedas/400monedas.png",
+        "icono": "../image/monedas/iconomoneda.png",
+        "categoria": {
+            "nombre": "MONEDAS",
+            "id": "monedas"
+        },
+        "precio": 2.8
+    },
+    {
+        "id": "150-monedas",
+        "nombre": "150 Monedas", 
+        "imagen": "../image/monedas/150monedas.png",
+        "icono": "../image/monedas/iconomoneda.png",
+        "categoria": {
+            "nombre": "MONEDAS",
+            "id": "monedas"
+        },
+        "precio": 1.12
+    },
+    {
+        "id": "2700-blims",
+        "nombre": "2700 Blims", 
+        "imagen": "../image/blims/2700blims.png",
+        "icono": "../image/blims/iconoblims.png",
+        "categoria": {
+            "nombre": "BLIMS",
+            "id": "blims"
+        },
+        "precio": 15.68
+    }
+    ,
+    {
+        "id": "1600-blims",
+        "nombre": "1600 Blims", 
+        "imagen": "../image/blims/1600blims.png",
+        "icono": "../image/blims/iconoblims.png",
+        "categoria": {
+            "nombre": "BLIMS",
+            "id": "blims"
+        },
+        "precio": 7.84
+    }
+    ,
+    {
+        "id": "500-blims",
+        "nombre": "500 Blims", 
+        "imagen": "../image/blims/500blims.png",
+        "icono": "../image/blims/iconoblims.png",
+        "categoria": {
+            "nombre": "BLIMS",
+            "id": "blims"
+        },
+        "precio": 2.8
+    }
+]
